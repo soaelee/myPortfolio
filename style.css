@@ -1,0 +1,27 @@
+div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: red;
+}
+
+.container {
+  background: lightblue;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.box {
+  background: blue;
+  position: sticky;
+  left: 20px;
+  top: 0px;
+}
+
+/* 
+1. relative는 원래 아이템의 위치에서 이동
+2. absolute는 나를 포함하는 아이템의 위치에서 이동
+3. fixed는 Window의 위치에서 이동
+4. sticky는 scrolling 돼도 Window 기준 지정된 위치에 고정
+*/
