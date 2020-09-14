@@ -5,6 +5,11 @@ html {
 .navbar__logo img {
   width: 20px;
 }
+
+.home__avatar {
+  width: 150px;
+  border-radius: 50%;
+}
 /* 
 1. relative는 원래 아이템의 위치에서 이동
 2. absolute는 나를 포함하는 아이템의 위치에서 이동
