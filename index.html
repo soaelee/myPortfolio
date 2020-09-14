@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soae's Portfolio</title>
+    <!-- description / author -->
     <meta name="description" content="Portfolio for web developer Soae" />
     <meta name="author" content="Soae" />
-    <!-- Icon -->
-    <link rel="icon" type="img/png" href="img/star.png" />
+    <!-- favicon -->
+    <link rel="icon" type="img/png" href="img/favi.png" />
     <!-- font awesome / google font-->
     <script
       src="https://kit.fontawesome.com/72c88d65e7.js"
@@ -22,5 +23,41 @@
     <script src="main.js" defer></script>
     <!--  html이 parsing 되는 동안 js file을 동시에 다운로드,  실행은 html parsing이 완료된 후에!-->
   </head>
-  <body></body>
+  <body>
+    <!-- BEM -
+        .card // .card--dark
+        .card__img
+        .card__title
+        .card__discription
+        .card__button   // .card__button--blue
+    -->
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="img/favi.png" alt="favicon" />
+        <a href="#">Soae</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My work</li>
+          <li class="navbar__menu__item">Testimonial</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- About -->
+    <section id="about"></section>
+    <!-- Skills -->
+    <section id="skills"></section>
+    <!-- Work -->
+    <section id="work"></section>
+    <!-- Testimonials -->
+    <section id="testimonials"></section>
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
 </html>
