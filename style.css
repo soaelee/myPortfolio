@@ -10,6 +10,14 @@ html {
   width: 150px;
   border-radius: 50%;
 }
+
+.major__icon img {
+  width: 50px;
+}
+
+.job__logo {
+  width: 100px;
+}
 /* 
 1. relative는 원래 아이템의 위치에서 이동
 2. absolute는 나를 포함하는 아이템의 위치에서 이동
