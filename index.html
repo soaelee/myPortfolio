@@ -10,14 +10,8 @@
     <!-- favicon -->
     <link rel="icon" type="img/png" href="img/favi.png" />
     <!-- font awesome / google font-->
-    <script
-      src="https://kit.fontawesome.com/72c88d65e7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/72c88d65e7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
     <!-- css, js -->
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
@@ -49,13 +43,17 @@
         </ul>
       </div>
     </nav>
+
     <!-- Home -->
     <section id="home">
-      <img src="img/me.jpg" alt="Soae's profile phogo" class="home__avatar" />
-      <h1 class="home__title">Hello,<br />I'm Dream Coder</h1>
-      <h2 class="home__discription">A Frontend Developer growing-up</h2>
-      <button class="home__button">CONTACT ME</button>
+      <div class="home__container">
+        <img src="img/me.jpg" alt="Soae's profile phogo" class="home__avatar" />
+        <h1 class="home__title">Hello,<br />I'm Dream Coder</h1>
+        <h2 class="home__discription">A Frontend Developer growing-up</h2>
+        <button button class="home__button">CONTACT ME</button>
+      </div>
     </section>
+
     <!-- About -->
     <section id="about">
       <h1 class="title">About me</h1>
@@ -67,42 +65,47 @@
         adipisicing elit. Quaerat laboriosam quae corrupti facilis laudantium
         nostrum ab pariatur nihil omnis natus.
       </p>
-
+      <!-- About-Majors -->
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
             <img src="img/js.png" alt="javascript" />
           </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">HTML, CSS, JavaScript</div>
+          <h2 class="major__title">Front-end</h2>
+          <p class="major__description">HTML, CSS, JavaScript</p>
         </div>
         <div class="major">
           <div class="major__icon"><img src="img/db.png" alt="database" /></div>
-          <div class="major__title">Back-end</div>
-          <div class="major__description">
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">
             Java, JavaScript, NodeJS, RestAPIs
-          </div>
+          </p>
         </div>
         <div class="major">
           <div class="major__icon"><img src="img/js.png" alt="again" /></div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">HTML, CSS, JavaScript</div>
+          <h2 class="major__title">Front-end</h2>
+          <p class="major__description">HTML, CSS, JavaScript</p>
         </div>
       </div>
-
+      <!-- About-Jobs -->
       <div class="about__jobs">
         <div class="job">
           <img class="job__logo" src="img/sejong.png" alt="sejong_university" />
-          <p class="job__name">세종대학교 졸업</p>
-          <p class="job__period">2014.03 ~ 2020. 02</p>
+          <div class="job__description">
+            <p class="job__name">세종대학교 졸업</p>
+            <p class="job__period">2014.03 ~ 2020. 02</p>
+          </div>
         </div>
         <div class="job">
           <img class="job__logo" src="img/sejong.png" alt="sejong_university" />
-          <p class="job__name">세종대학교 졸업</p>
-          <p class="job__period">2014.03 ~ 2020. 02</p>
+          <div class="job__description">
+            <p class="job__name">세종대학교 졸업</p>
+            <p class="job__period">2014.03 ~ 2020. 02</p>
+          </div>
         </div>
       </div>
     </section>
+
     <!-- Skills -->
     <section id="skills"></section>
       <h1 class="title">Skills</h1>
@@ -122,7 +125,7 @@
               <span>99%</span>
             </div>
             <div class="skill_bar">
-              .skill__value
+              <div class="skill__value"></div>
             </div>
           </div>
           <div class="skill">
@@ -151,26 +154,66 @@
           <div class="tools">
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
-              <li class="tools__list__item"><span>Visual Studio</span></li>
-              <li class="tools__list__item"><span>Spring</span></li>
-              <li class="tools__list__item"><span>Adobe XD</span></li>
+              <li><span>Visual Studio</span></li>
+              <li><span>Spring</span></li>
+              <li><span>Adobe XD</span></li>
             </ul>
           </div>
           <div class="etc">
             <h3 class="skillset__title">ETC</h3>
             <ul class="etc__list">
-              <li class="etc__list__item"><span>Git</span></li>
-              <li class="etc__list__item"><span>SQL</span></li>
-              <li class="etc__list__item"><span>None</span></li>
+              <li><span>Git</span></li>
+              <li><span>SQL</span></li>
+              <li><span>None</span></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    
     <!-- Work -->
-    <section id="work"></section>
+    <section id="work">
+      <h1 class="title">My Work</h1>
+      <p class="description">Projects</p>
+      <div class="work__categories">
+        <button class="category__btn">All<span class="category__count">8</span></button>
+        <button class="category__btn">Front-end<span class="category__count">3</span></button>
+        <button class="category__btn">Back-end<span class="category__count">3</span></button>
+        <button class="category__btn">Mobile<span class="category__count">2</span></button>
+      </div>
+      <div class="work__projects">
+        <a href="#" class="project" target="_blank">
+          <img class="project__img" src="img/iphone.png" alt="iphone">
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clond coding with HEML and CSS</span>
+          </div>
+        </a>
+      </div>
+    </section>
     <!-- Testimonials -->
-    <section id="testimonials"></section>
+    <section id="testimonials">
+      <h1 class="title">Testimonials</h1>
+      <p class="description">See what they say about me</p>
+      <div class="testimonials__says">
+        <div class="card">
+          <div class="card__picture">
+            <img class="project__img" src="img/sky.jpg" alt="sky">
+          </div>
+          <div class="card__description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quasi molestiae veniam natus itaque qui animi id, alias suscipit voluptatibus, perferendis libero explicabo, repellat laboriosam facilis maiores commodi nam dolore.</p>
+            <p><span>Soae</span>/TigerSpike</p>
+          </div>
+          <div class="card__picture">
+            <img src="img/sky.jpg" alt="sky">
+          </div>
+          <div class="card__description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quasi molestiae veniam natus itaque qui animi id, alias suscipit voluptatibus, perferendis libero explicabo, repellat laboriosam facilis maiores commodi nam dolore.</p>
+            <p><span>Soae</span>/TigerSpike</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Contact -->
     <section id="contact"></section>
   </body>

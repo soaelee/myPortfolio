@@ -6,7 +6,8 @@ html {
   width: 20px;
 }
 
-.home__avatar {
+.home__avatar,
+.project img {
   width: 150px;
   border-radius: 50%;
 }
