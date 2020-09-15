@@ -56,7 +56,7 @@ button {
   cursor: pointer;
   outline: none;
 }
-/* Typographyd */
+/* Typography */
 .title {
   font-size: var(--font-large);
   font-weight: var(--font-bold);
@@ -141,8 +141,12 @@ button {
 .section {
   margin: auto;
   text-align: center;
-  max-width: 1200px;
   padding: 50px 0;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .about__majors {
@@ -206,6 +210,77 @@ button {
 
 .job__description {
   font-size: var(--font-micro);
+}
+
+/* Skill */
+#skills {
+  background: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 40px 0;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background: var(--color-dark-grey);
+  padding-bottom: 20px;
+}
+
+.skill__description {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  margin-bottom: 8px;
+  padding: 0px 40px;
+}
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background: var(--color-grey);
+  border-radius: calc(var(--size-border-radius) * 2);
+}
+
+.skill__value {
+  width: 70%;
+  height: 3px;
+  background: yellow;
+  border-radius: calc(var(--size-border-radius) * 2);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.skillset__title {
+  margin: 0 20px;
+  padding: 20px;
+  color: var(--color-white);
+}
+.tools {
+  background: var(--color-grey);
+  margin: auto;
+}
+
+.tools__list,
+.etc__list {
+  padding-left: 0;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.tools__list li,
+.etc__list li {
+  padding-bottom: 4px;
+}
+.tools__list {
+  margin-bottom: px;
 }
 /* 
 1. relative는 원래 아이템의 위치에서 이동
