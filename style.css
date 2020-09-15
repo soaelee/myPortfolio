@@ -1,27 +1,16 @@
+/* Global setting */
 html {
   font-family: "Open Sans", sans-serif;
 }
 
-.navbar__logo img {
-  width: 20px;
-}
-
-.home__avatar,
-.project img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-.major__icon img {
-  width: 50px;
-}
-
-.job__logo {
-  width: 100px;
-}
 /* 
 1. relative는 원래 아이템의 위치에서 이동
 2. absolute는 나를 포함하는 아이템의 위치에서 이동
 3. fixed는 Window의 위치에서 이동
 4. sticky는 scrolling 돼도 Window 기준 지정된 위치에 고정
 */
+.box {
+  width: 150px;
+  height: 218px;
+  border: 1px solid black;
+}
