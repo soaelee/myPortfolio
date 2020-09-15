@@ -27,11 +27,24 @@ html {
   --font-semi-bold: 600;
   --font-regular: 400;
   /* Size */
+  --base-space: 4px;
+  --size-border-radius: 4px;
 }
 
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+body {
+  margin: 0;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+ul {
+  list-style: none;
 }
 
 /* Typographyd */
@@ -55,14 +68,41 @@ html {
   color: var(--color-black);
   margin: 8px 0;
 }
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-pink);
+  color: var(--color-white);
+  padding: 16px;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+}
+.navbar__menu {
+  display: flex;
+}
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+
+  border-radius: var(--size-border-radius);
+  cursor: pointer;
+}
+
+.navbar__menu__item:hover {
+  background: var(--color-dark-pink);
+}
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
 /* 
 1. relative는 원래 아이템의 위치에서 이동
 2. absolute는 나를 포함하는 아이템의 위치에서 이동
 3. fixed는 Window의 위치에서 이동
 4. sticky는 scrolling 돼도 Window 기준 지정된 위치에 고정
 */
-.box {
-  width: 150px;
-  height: 218px;
-  border: 1px solid black;
-}
