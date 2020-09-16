@@ -94,7 +94,7 @@ button {
   align-items: center;
   background: var(--color-pink);
   color: var(--color-white);
-  padding: 16px;
+  padding: 16px 50px;
 }
 
 .navbar__logo {
@@ -131,6 +131,10 @@ button {
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+}
+
+.home__title {
+  font-size: var(--font-large);
 }
 .home__title,
 .home__description {
@@ -297,8 +301,17 @@ button {
 
 /* Work */
 
+#work {
+  background: var(--color-white);
+}
+
 .work__categories {
-  margin: 40px;
+  margin: 40px auto;
+}
+
+.projects__container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .category__btn {
