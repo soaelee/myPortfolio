@@ -56,6 +56,7 @@ button {
   cursor: pointer;
   outline: none;
 }
+
 /* Typography */
 .title {
   font-size: var(--font-large);
@@ -95,6 +96,7 @@ button {
 .navbar__menu {
   display: flex;
 }
+
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
@@ -240,6 +242,7 @@ button {
   margin-bottom: 8px;
   padding: 0px 40px;
 }
+
 .skill__bar {
   width: 100%;
   height: 3px;
@@ -279,8 +282,115 @@ button {
 .etc__list li {
   padding-bottom: 4px;
 }
+
 .tools__list {
   margin-bottom: px;
+}
+
+/* Work */
+
+.work__categories {
+  margin: 40px;
+}
+
+.category__btn {
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  padding: 8px 48px;
+  font-size: var(--font-regular);
+  font-weight: var(--font-semi-bold);
+}
+
+.category__btn.category__count {
+  display: none;
+}
+
+.category__btn.active,
+.category__btn:hover {
+  background: var(--color-dark-pink);
+  color: var(--color-white);
+}
+
+.category__count {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--color-orange);
+  background: var(--color-orange);
+  border-radius: 50%;
+  color: white;
+  line-height: 24px;
+  margin-left: 5px;
+  position: relative;
+  top: -30px;
+  left: 4px;
+  transition: all var(--animation-duration) ease-in;
+  opacity: 0;
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin: 2px;
+  background: var(--color-dark-white);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* relative로 이동하거나, 크기만 키울 경우
+   자신의 위치를 그대로 유지하고 있음
+   그러면 project를 felx했을 때, 공간을 차지하게 된다.
+   위에 둥둥 뜨게 하고 싶으면, 부모 요소는 relative하고
+   해당 요소를 absolute하고 top, left를 0으로 만든다음에 width, height를 100%로 조절 */
+.project__description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-black);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.project__description:hover {
+  opacity: 0.7;
+  transform: translateY(0);
+}
+
+.project__description h3:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--color-dark-white);
+  display: block;
+  position: relative;
+  left: 45%;
+  margin-right: 12px;
+  margin-top: 8px;
 }
 /* 
 1. relative는 원래 아이템의 위치에서 이동
