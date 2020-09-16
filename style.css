@@ -392,6 +392,58 @@ button {
   margin-right: 12px;
   margin-top: 8px;
 }
+
+/* Testimonial */
+
+#testimonials {
+  background: var(--color-light-white);
+  margin: 40px;
+}
+
+.testimonial:nth-child(1) {
+  display: flex;
+  margin: 32px 0;
+  justify-content: center;
+}
+
+.testimonial:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 32px 0;
+  justify-content: center;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.testimonial__speech-bubble {
+  background: var(--color-white);
+  flex-basis: 70%;
+  margin: 0;
+  padding: 10px;
+  border-radius: var(--size-border-radius);
+}
+.testimonial__speech-bubble p {
+  font-size: var(--font-small);
+  font-weight: var(--font-semi-bold);
+  color: var(--color-grey);
+}
+
+.testimonial__speech-bubble p.name {
+  margin: 0;
+}
+
+.testimonial__speech-bubble a {
+  color: var(--color-dark-pink);
+}
+.testimonial__speech-bubble a:after {
+  content: " / ";
+  color: var(--color-grey);
+}
 /* 
 1. relative는 원래 아이템의 위치에서 이동
 2. absolute는 나를 포함하는 아이템의 위치에서 이동
