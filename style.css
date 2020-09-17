@@ -103,6 +103,7 @@ button {
 #navbar.navbar--color {
   background: var(--color-pink-purple);
   padding: 8px;
+  z-index: 1;
 }
 
 .navbar__logo {
