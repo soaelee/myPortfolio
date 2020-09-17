@@ -6,6 +6,7 @@ const navbarMenu = document.querySelector(".navbar__menu");
 const homeButton = document.querySelector(".home__button");
 const home = document.querySelector(".home__container");
 const homeHeight = home.getBoundingClientRect().height;
+const arrowButton = document.querySelector(".arrow--button");
 
 // Make navbar transparent when it is on the top
 
@@ -40,7 +41,22 @@ document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-function scrollIntoView(event) {
+//Show "arrow up" button when scrolling down
+document.addEventListener("scroll", (event) => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowButton.classList.add("visible");
+  } else {
+    arrowButton.classList.remove("visible");
+  }
+});
+
+//Handle click on the "arrow button"
+
+arrowButton.addEventListener("click", (event) => {
+  scrollIntoView("#home");
+});
+
+function scrollIntoView(link) {
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView({ behavior: "smooth" });
 }
