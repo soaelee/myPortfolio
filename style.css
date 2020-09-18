@@ -550,6 +550,18 @@ button {
 /* For below 768px screen width */
 
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30x;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12x;
+  }
+
+  .section {
+    padding: 16px;
+  }
   /* navbar menu 대신 toggle */
   .navbar__toggle-btn {
     display: block;
@@ -574,6 +586,7 @@ button {
   }
   .about__majors {
     flex-direction: column;
+    margin: 0;
   }
   .major {
     margin-bottom: 30px;
@@ -581,5 +594,43 @@ button {
 
   .skillset {
     flex-direction: column;
+  }
+
+  .title.title--white {
+    font-size: 24px;
+  }
+
+  .testimonial:nth-child(1),
+  .testimonial:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work__categories {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .category__btn {
+    padding: 10px 10px;
+    font-size: var(--font-small);
+    width: 80%;
+    height: auto;
+    margin: 4px auto;
+    position: relative;
+  }
+
+  .category__count {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 5px;
+    top: -30px;
+    left: 160px;
+    text-align: center;
+    position: absolute;
   }
 }
