@@ -68,6 +68,13 @@ workBtnContainer.addEventListener("click", (e) => {
   if (category == null) {
     return;
   }
+
+  //Remove selection from the previous item and select the new one
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
+  const target =
+    e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  target.classList.add("selected");
   //먼저 나가는 animation 먼저 효과주고
   projectsContainer.classList.add("anim-out");
   //3초 후에, 함수 실행하기
