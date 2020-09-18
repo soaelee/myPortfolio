@@ -10,6 +10,8 @@ const arrowButton = document.querySelector(".arrow--button");
 const workBtnContainer = document.querySelector(".work__categories");
 const projectsContainer = document.querySelector(".work__projects");
 const projects = document.querySelectorAll(".project");
+const navToggleBtn = document.querySelector(".navbar__toggle-btn");
+
 // Make navbar transparent when it is on the top
 
 document.addEventListener("scroll", () => {
@@ -26,6 +28,7 @@ navbarMenu.addEventListener("click", (event) => {
   const target = event.target;
   const link = target.dataset.link;
   scrollIntoView(link);
+  navbarMenu.classList.remove("open");
 });
 
 //Handle sclick on "contact me" button on home
@@ -89,6 +92,12 @@ workBtnContainer.addEventListener("click", (e) => {
     //제거 안하면 animation-out된 상태로 계속 남아있음
     projectsContainer.classList.remove("anim-out");
   }, 300);
+});
+
+//Navbar toggle button for small screen
+
+navToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
 });
 
 function scrollIntoView(link) {

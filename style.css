@@ -123,7 +123,7 @@ button {
 }
 
 .navbar__menu__item:hover {
-  background: var(--color-pink-purple);
+  background: var(--color-pink);
   border: 1px solid var(--color-white);
 }
 
@@ -426,6 +426,9 @@ button {
   transition: all var(--animation-duration) ease-in;
 }
 
+.project__description h3 {
+  color: var(--color-orange);
+}
 .project__description:hover {
   opacity: 0.7;
   transform: translateY(0);
@@ -433,12 +436,12 @@ button {
 
 .project__description h3:after {
   content: "";
-  width: 20px;
-  height: 2px;
+  width: 50px;
+  height: 1px;
   background: var(--color-dark-white);
   display: block;
   position: relative;
-  left: 45%;
+  left: 35%;
   margin-right: 12px;
   margin-top: 8px;
 }
@@ -555,13 +558,19 @@ button {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  #navbar.navbar--color {
+    padding: 16px;
+  }
   .navbar__menu {
     flex-direction: column;
     padding: 0;
     width: 100%;
     text-align: center;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
   .about__majors {
     flex-direction: column;
